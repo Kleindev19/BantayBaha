@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column; /* Stack navbar and main content vertically */
+    min-height: 100vh;
+    background-color: #F5F7F8; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Recommended font */
+    color: #333333; /* Default dark gray text */
+}
+
+/* Custom wrapper for the main content to handle vertical centering if needed */
+.custom-main-content-wrapper {
+    flex-grow: 1; /* Allows this div to take up remaining vertical space */
+    display: flex;
+    align-items: center; /* Centers content vertically within this wrapper */
+    justify-content: center; /* Centers content horizontally within this wrapper */
+    padding: 20px; /* Overall padding for the content area */
+}
+
+/* General Navbar Styling */
+.navbar {
+    background-color: #0a4275 !important; /* Deep formal blue */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* White color for links */
+    margin-right: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00eeff; /* Cyan highlight on hover/active */
+    border-bottom: 2px solid #00c2ff;
+}
+
+/* Toggler icon color (for mobile navbar) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Lighter border for toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Custom styles for the Info Box (Cyan background text container) */
+.info-box { /* Renamed from .container to .info-box */
+    background-color: #DCE5EB; /* Light Blue-Gray background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px 30px; /* Padding inside the box */
+    max-width: 500px; /* Max width for the text box. Adjust as needed for text wrapping. */
+    width: 100%; /* Responsive width within its column */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the box */
+}
+
+/* Text styles within the info-box */
+.info-box h2 {
+    font-size: 2.2em; /* Heading font size */
+    margin-bottom: 15px; /* Space below heading */
+    color: #2C3E50; /* Deep blue-gray for heading */
+    font-weight: bold;
+    text-align: center; /* Ensure heading is centered */
+}
+
+.info-box p {
+    font-size: 1.1em; /* Paragraph font size */
+    line-height: 1.6;
+    color: #333333; /* Dark gray for paragraph text */
+    text-indent: 3em; /* Indent for the first line */
+    text-align: left; /* Align paragraphs to the left */
+}
+
+/* Image styling - leveraging Bootstrap's .img-fluid */
+/* .img-fluid is already responsive. Add custom border-radius and shadow. */
+.img-fluid {
+    border-radius: 20px; /* Match info-box border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match info-box shadow */
+    max-width: 100%; /* Ensures image fits within its column */
+    height: auto; /* Maintains aspect ratio */
+}
+
+
+/* General Link Color for the page content if needed */
+a {
+    color: #0a4275; /* Deep formal blue for links */
+    text-decoration: none;
+}
+a:hover {
+    color: #00eeff; /* Cyan on hover */
+    text-decoration: underline;
+}
