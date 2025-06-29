@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center; /* Centers content vertically within this wrapper */
     justify-content: center; /* Centers content horizontally within this wrapper */
-    padding: 20px; /* Overall padding for the content area */
+    padding: 100px 20px; /* Overall padding for the content area */
 }
 
 /* General Navbar Styling */
@@ -94,3 +94,81 @@ a:hover {
     color: #00eeff; /* Cyan on hover */
     text-decoration: underline;
 }
+
+/*sa rescue to*/
+#rescue-info {
+    padding: 20px 0;
+    color: #ababaa;
+
+}
+.rescue-img {
+  width: 250px; /* medium size */
+  height: auto; /* auto para hindi ma-distort */
+
+}
+
+.image-paragraph {
+    background: #DCE5EB;
+    color: #000000;
+    padding: 10px;
+    border:1px solid #000000;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 0px;
+    width: fit-content;
+    text-align: center;
+}
+.image-paragraph:hover {
+    transform: scale(1.1);
+}
+
+
+.rescue-2-img {
+    width: 250px; /* medium size */
+  height: auto; /* auto para hindi ma-distort */
+}
+
+.image-paragraph2 {
+    background: #DCE5EB;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+
+  
+}
+
+.image-paragraph2:hover {
+    transform: scale(1.1); /* Tama syntax */
+    
+}
+.rescue-map {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f4f8fb; /* Optional background */
+  text-align: center;
+}
+.rescue-map:hover {
+    transform: scale(11.1em);
+}
+.rescue-map h2 {
+  font-size: 24px;
+  color: #0a4275;
+  margin-bottom: 20px;
+}
+
+.rescue-map iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+
